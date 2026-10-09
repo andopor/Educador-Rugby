@@ -14,10 +14,10 @@ export const lessons = [
   {
     "title": "Pasar y cruzar",
     "subtitle": "Tu acción sigue después del pase",
-    "lead": "Después de pasar, cruza por detrás de quien recibe y vuelve a ofrecer apoyo.",
+    "lead": "Después de pasar, retrocede y cruza por detrás de quien recibe. El nuevo portador avanza buscando el centro.",
     "steps": [
       "Pasa con control y mira por dónde vas a continuar.",
-      "Cruza por detrás del receptor, dejando espacio.",
+      "Primero recupera profundidad y cruza por detrás del receptor, dejando espacio.",
       "Recupera una posición útil al lado o por detrás.",
       "En tríos, enlaza pases y cruces alternos: así construimos la trenza."
     ],
@@ -31,7 +31,7 @@ export const lessons = [
       "El apoyo mantiene anchura y se ofrece al lado o por detrás.",
       "Si el defensor cubre al apoyo, busca el espacio para avanzar.",
       "Si se compromete con el portador, busca el pase al compañero.",
-      "Tras pasar, sigue apoyando: no te quedes mirando."
+      "Tras pasar, repliega por detrás del nuevo portador antes de volver a apoyar."
     ],
     "note": "Fijar es provocar una respuesta defensiva, sin buscar el choque."
   },
@@ -41,7 +41,7 @@ export const lessons = [
     "lead": "En el 2×2 necesitas leer a ambos defensores, ajustar tu trayectoria y coordinar el apoyo.",
     "steps": [
       "A1 busca con intención el centro entre los dos defensores para provocar su respuesta.",
-      "Si A1 fija al impar, A2 se abre lateralmente para ofrecer una salida.",
+      "Si A1 fija al impar, A2 se abre manteniendo profundidad; recibe y avanza con balón por la banda para superar a D2.",
       "Si A1 fija al par, A2 cruza por detrás de A1 para volver a ofrecer apoyo.",
       "A2 lee lo que ocurre y ajusta su movimiento; A1 coordina el momento del pase con ese apoyo."
     ],
@@ -66,7 +66,7 @@ export const lessons = [
     "steps": [
       "El avant es una pérdida o golpe del balón hacia delante con mano o brazo, si toca el suelo u otro jugador antes de recuperarlo.",
       "Un pase hacia delante es otra infracción: no lo confundas con el avant.",
-      "En juego general, estar por delante del compañero que lleva o jugó por última vez el balón puede dejarte fuera de juego.",
+      "En juego general, si estás por delante del compañero que lleva o jugó por última vez el balón, estás en posición de fuera de juego. No intervengas: recupera una posición en juego.",
       "Recolócate antes de intervenir y respeta las posiciones que se acuerden en los reinicios."
     ],
     "note": "Trabajamos una adaptación escolar. Tu docente explica las condiciones de cada tarea y reinicio."
@@ -80,7 +80,7 @@ export const sessions = [
       "Activación: familiarización con el balón por parejas, mediante entregas y recepciones cortas.",
       "Progresión 1 · Pasar: pases en estático, a ambos lados, ajustando distancia y fuerza.",
       "Progresión 2 · Pasar en desplazamiento: avanzar andando y después a trote suave, manteniendo al receptor al lado o ligeramente por detrás.",
-      "Progresión 3 · Pasar y cruzar por detrás: después de pasar, cruzar por detrás del receptor para volver a ofrecer apoyo. Ensayar primero despacio y alternar los lados.",
+      "Progresión 3 · Pasar y cruzar por detrás: después de pasar, retroceder y cruzar por detrás del receptor para volver a ofrecer apoyo; quien recibe avanza buscando el centro. Ensayar primero despacio y alternar los lados.",
       "Aplicación: enlazar pase, cruce por detrás y nuevo apoyo a lo largo de una calle amplia, sin oposición.",
       "Observar: mira al receptor, ajusta el pase y cruza sin invadir su trayectoria.",
       "Cierre: «¿Dónde te colocas después de pasar para seguir ayudando?»."
@@ -98,8 +98,8 @@ export const sessions = [
     "steps": [
       "Activación: recuperar la progresión por parejas de pasar y cruzar por detrás.",
       "Progresión 1 · Tríos: avanzar con pases laterales o hacia atrás, manteniendo anchura y profundidad de apoyo.",
-      "Progresión 2 · Trenza guiada: quien lleva el balón pasa a un compañero lateral y corre por detrás de él; el nuevo portador orienta el siguiente pase al otro compañero. Repetir alternando lados, primero andando.",
-      "Progresión 3 · Trenza continua: enlazar las acciones a trote suave, sin adelantar al portador para recibir y sin pases hacia delante.",
+      "Progresión 2 · Trenza guiada: quien lleva el balón pasa a un compañero lateral y corre por detrás de él; el nuevo portador avanza buscando el centro y orienta el siguiente pase al otro compañero. Repetir alternando lados, primero andando.",
+      "Progresión 3 · Trenza continua: enlazar las acciones a trote suave, replegándose tras pasar, sin adelantar al portador para recibir y sin pases hacia delante.",
       "Aplicación: completar un recorrido con continuidad, recuperando la separación entre jugadores después de cada cruce.",
       "Observar: tras pasar cruza por detrás, vuelve a ofrecerse y coordina su recorrido con los compañeros.",
       "Cierre: «¿Qué pasa si cruzamos demasiado cerca o nos adelantamos?»."
@@ -107,7 +107,6 @@ export const sessions = [
     "adjust": "detener la secuencia tras cada pase para recolocarse; aumentar velocidad solo cuando haya coordinación.",
     "diagrams": [
       "trio",
-      "trenza",
       "trenza"
     ]
   },
@@ -126,7 +125,6 @@ export const sessions = [
     "adjust": "ampliar el campo o limitar inicialmente el desplazamiento del defensor.",
     "diagrams": [
       "tap",
-      "dos-uno",
       "dos-uno"
     ]
   },
@@ -136,7 +134,7 @@ export const sessions = [
     "steps": [
       "Activación: recordar el 2×1 y el pase seguido de cruce por detrás.",
       "Progresión 1 · Fijar al par: A1 busca el centro entre los dos defensores y compromete a su par; A2 lee la situación y cruza por detrás para ofrecer apoyo.",
-      "Progresión 2 · Fijar al impar: A1 busca el centro entre los dos defensores y compromete al impar; A2 lee la situación y se abre lateralmente. Coordinar el pase sin buscar el contacto.",
+      "Progresión 2 · Fijar al impar: A1 busca el centro entre los dos defensores y compromete al impar; A2 se abre manteniendo profundidad, recibe y avanza con balón por la banda para superar a D2. A1 se repliega antes de volver a apoyar.",
       "Progresión 3 · Elegir: defensa libre con doble tap. Los atacantes eligen trayectoria, apoyo y momento del pase según la respuesta de ambos defensores.",
       "Aplicación: repetir desde ambos lados y rotar las cuatro posiciones.",
       "Observar: identifica a quién intenta fijar, provoca una respuesta y coordina el pase con un apoyo útil.",

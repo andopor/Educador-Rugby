@@ -39,7 +39,7 @@ const lessonBoards = [
 ];
 function renderLessonBoard(){
  const config=lessonBoards[lessonIndex];
- $('lesson-board').innerHTML=`<div class="board-heading"><span class="eyebrow">PIZARRA · ${esc(lessons[lessonIndex].title)}</span><h2>${esc(config.title)}</h2><p>Pulsa Reproducir para ver el balón y a los jugadores en movimiento. Puedes pausar, cambiar la velocidad o revisar cada paso.</p></div><div class="board-grid">${config.keys.map((key,i)=>diagram(key,`lesson-${lessonIndex}-${key}-${i}`)).join('')}</div>`;
+ $('lesson-board').innerHTML=`<div class="board-heading"><span class="eyebrow">PIZARRA · ${esc(lessons[lessonIndex].title)}</span><h2>${esc(config.title)}</h2><p>Pulsa Reproducir para ver el balón y a los jugadores en movimiento. Puedes pausar, cambiar la velocidad o revisar cada paso. Las pausas separan las acciones para aprender; en juego se enlazan.</p></div><div class="board-grid">${config.keys.map((key,i)=>diagram(key,`lesson-${lessonIndex}-${key}-${i}`)).join('')}</div>`;
 }
 $('sessions').innerHTML=sessions.map((s,i)=>`<details class="session" ${i===0?'open':''}><summary><span>0${i+1}</span>${esc(s.title)}</summary><div class="session-body"><p><strong>Objetivo:</strong> ${esc(s.goal)}</p><ul>${s.steps.map(step=>`<li>${esc(step)}</li>`).join('')}</ul><h3 class="session-diagrams-title">La práctica, de un vistazo.</h3><div class="practice-diagrams">${s.diagrams.map((key,j)=>diagram(key,`practice-${i}-${key}-${j}`,{compact:true})).join('')}</div><p class="notice"><strong>Ajuste:</strong> ${esc(s.adjust)}</p></div></details>`).join('');
 const lineLabels=['Línea 1 · 2×1','Línea 2 · 2×1','Línea final · 2×2'];
@@ -55,7 +55,7 @@ document.addEventListener('click',event=>{
  if(button.dataset.lesson!==undefined){lessonIndex=Number(button.dataset.lesson);renderLesson(true);}
  if(button.id==='next-lesson'){lessonIndex++;renderLesson(true);}
  if(button.dataset.phaseTo!==undefined)selectPhase(button.closest('[data-board]'),Number(button.dataset.phaseTo));
- if(button.hasAttribute('data-play')){const figure=button.closest('[data-board]');if(figure.dataset.board==='libre'&&!figure.dataset.variant){figure.dataset.variant='par';updateDiagram(figure,0);}togglePlayback(figure);}
+ if(button.hasAttribute('data-play'))togglePlayback(button.closest('[data-board]'));
  if(button.hasAttribute('data-restart')){const figure=button.closest('[data-board]');stopPlayback(figure,true);figure.dataset.finished='false';}
  if(button.dataset.answer!==undefined&&answers.length===questionIndex){
   const selected=Number(button.dataset.answer),q=questions[questionIndex];answers.push(selected===q.answer);
@@ -74,7 +74,7 @@ document.addEventListener('click',event=>{
  if(button.id==='print')window.print();
 });
 document.addEventListener('change',event=>{
- if(event.target.matches('[data-variant],[data-pass-option]')){
+ if(event.target.matches('[data-variant]')){
   const figure=event.target.closest('[data-board]');stopPlayback(figure);
   if(event.target.matches('[data-variant]'))figure.dataset.variant=event.target.value;
   updateDiagram(figure,0);figure.dataset.finished='false';

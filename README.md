@@ -40,3 +40,7 @@ Confirmados: doble tap, parejas/cruces/trenzas, fijación par/impar y evaluació
 ## Web publicada
 
 [Educador Rugby](https://educador-rugby.vercel.app) · publicación y archivos principales comprobados el 9 de octubre de 2026.
+
+## Pizarras · 0.7.0
+
+Jugadas definidas en `js/plays.js`, presentación en `js/diagrams.js` y reproducción en `js/playback.js`. Las pruebas revisan toda la trayectoria de los apoyos, dirección de los pases y continuidad entre fases. Las pausas son didácticas y el doble tap es una adaptación escolar. Fuentes y criterios en GUIA_DOCENTE.md.

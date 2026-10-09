@@ -1,5 +1,13 @@
 # Versiones
 
+## 0.7.0 · 2026-10-09
+
+- Secuencias explícitas: pase, repliegue, avance y posesión continua.
+- Receptores buscan el centro en parejas y trenzas; A2 supera a D2 por la banda en fijación al impar.
+- Línea de posición y avisos de repliegue; alternativas del 2×1 separadas y pizarras duplicadas eliminadas.
+- Textos y guía revisados con las leyes 10 y 11 de World Rugby; adaptaciones escolares identificadas.
+- Ocho pruebas y revisión local en navegador/móvil correctas.
+
 ## 0.6.0 · 2026-10-09
 
 - Pizarras con reproducción del balón y los jugadores, pausa, reanudación, inicio y velocidad.
@@ -74,3 +82,5 @@
 - URL pública: https://educador-rugby.vercel.app.
 - Respuesta HTTP y archivos principales verificados contra la compilación local.
 - Configuración interna del panel y despliegue automático pendientes de inspección por acceso del conector.
+
+- Versión 0.6.0 publicada; reproducción y pausa verificadas en la web pública.

@@ -1,6 +1,6 @@
 # Educador Rugby · Aprende a jugar en equipo
 
-**Borrador 0.5 · 1.º ESO · 9 de octubre de 2026**
+**Borrador 0.7 · 1.º ESO · 9 de octubre de 2026**
 
 Propuesta de trabajo para revisar con el docente. Las seis sesiones, su duración y el material son hipótesis iniciales, no decisiones cerradas ni una programación curricular completa.
 
@@ -27,6 +27,10 @@ Estas son **adaptaciones para esta unidad**, no el reglamento completo de compet
 5. Si el balón cae o sale del campo, se para el juego y se reinicia con pase del otro equipo. El docente marca el punto y deja espacio suficiente para reiniciar.
 6. No se arrebata el balón de las manos ni se bloquea mediante contacto. Ante un choque o una caída, se detiene la actividad.
 
+**Posición en juego y pase:** estar por delante del compañero que lleva o jugó por última vez el balón es estar en posición de fuera de juego. No equivale automáticamente a sanción por el mero hecho de estar ahí: hay que distinguir posición e intervención. En estas progresiones, quien queda adelantado tras un pase hacia atrás se repliega y no vuelve a intervenir hasta recuperar una posición en juego. Los apoyos pueden avanzar mientras permanecen por detrás del portador; no se enseña que deban quedarse inmóviles siempre.
+
+Las animaciones separan pase, repliegue y avance para hacer visible el aprendizaje. Las pausas son una ayuda didáctica; no una obligación reglamentaria. En parejas y trenzas, quien recibe busca el centro con balón; en fijación al impar, A2 aprovecha la banda. Las respuestas defensivas de las pizarras son ejemplos guiados, no resultados garantizados.
+
 Presentar las reglas poco a poco. La prioridad inicial es que todos comprendan la tarea y participen.
 
 ## 3. Secuencia de sesiones
@@ -38,7 +42,7 @@ Presentar las reglas poco a poco. La prioridad inicial es que todos comprendan l
 - Activación: familiarización con el balón por parejas, mediante entregas y recepciones cortas.
 - Progresión 1 · Pasar: pases en estático, a ambos lados, ajustando distancia y fuerza.
 - Progresión 2 · Pasar en desplazamiento: avanzar andando y después a trote suave, manteniendo al receptor al lado o ligeramente por detrás.
-- Progresión 3 · Pasar y cruzar por detrás: después de pasar, cruzar por detrás del receptor para volver a ofrecer apoyo. Ensayar primero despacio y alternar los lados.
+- Progresión 3 · Pasar y cruzar por detrás: después de pasar, retroceder y cruzar por detrás del receptor para volver a ofrecer apoyo. Quien recibe avanza con balón buscando el centro. Ensayar primero despacio y alternar los lados.
 - Aplicación: enlazar pase, cruce por detrás y nuevo apoyo a lo largo de una calle amplia, sin oposición.
 - Observar: mira al receptor, ajusta el pase y cruza sin invadir su trayectoria.
 - Cierre: «¿Dónde te colocas después de pasar para seguir ayudando?».
@@ -51,8 +55,8 @@ Presentar las reglas poco a poco. La prioridad inicial es que todos comprendan l
 
 - Activación: recuperar la progresión por parejas de pasar y cruzar por detrás.
 - Progresión 1 · Tríos: avanzar con pases laterales o hacia atrás, manteniendo anchura y profundidad de apoyo.
-- Progresión 2 · Trenza guiada: quien lleva el balón pasa a un compañero lateral y corre por detrás de él; el nuevo portador orienta el siguiente pase al otro compañero. Repetir alternando lados, primero andando.
-- Progresión 3 · Trenza continua: enlazar las acciones a trote suave, sin adelantar al portador para recibir y sin pases hacia delante.
+- Progresión 2 · Trenza guiada: quien lleva el balón pasa a un compañero lateral y corre por detrás de él; el nuevo portador avanza con balón buscando el centro y orienta el siguiente pase al otro compañero. Repetir alternando lados, primero andando.
+- Progresión 3 · Trenza continua: enlazar las acciones a trote suave, replegándose tras pasar, sin adelantar al portador para recibir y sin pases hacia delante.
 - Aplicación: completar un recorrido con continuidad, recuperando la separación entre jugadores después de cada cruce.
 - Observar: tras pasar cruza por detrás, vuelve a ofrecerse y coordina su recorrido con los compañeros.
 - Cierre: «¿Qué pasa si cruzamos demasiado cerca o nos adelantamos?».
@@ -83,7 +87,7 @@ Presentar las reglas poco a poco. La prioridad inicial es que todos comprendan l
 
 - Activación: recordar el 2×1 y el pase seguido de cruce por detrás.
 - Progresión 1 · Fijar al par: A1 busca con intención el centro entre los dos defensores y compromete a su par. A2 lee la situación y cruza por detrás de A1 para ofrecer apoyo. Coordinar el momento del pase.
-- Progresión 2 · Fijar al impar: A1 busca con intención el centro entre los dos defensores y compromete al impar. A2 lee la situación y se abre lateralmente, manteniendo profundidad para recibir. Ensayar primero con defensa guiada y sin buscar el contacto.
+- Progresión 2 · Fijar al impar: A1 busca con intención el centro entre los dos defensores y compromete al impar. A2 lee la situación y se abre lateralmente, manteniendo profundidad para recibir; después avanza con balón por la banda para superar a D2. A1 se repliega por detrás antes de volver a apoyar. Ensayar primero con defensa guiada y sin buscar el contacto.
 - Progresión 3 · Elegir: defensa libre con doble tap. Los atacantes eligen trayectoria, apoyo y momento del pase según la respuesta de ambos defensores.
 - Aplicación: repetir desde ambos lados y rotar las cuatro posiciones.
 - Observar: identifica a quién intenta fijar, provoca una respuesta y coordina el pase con un apoyo útil.
@@ -173,8 +177,8 @@ Consultadas el 9 de octubre de 2026:
 
 - [World Rugby · Actividades sin contacto](https://www.world.rugby/the-game/game-participation/get-into-rugby/non-contact): referencia para pases, apoyos y tareas con toque de dos manos sin empujar.
 - [World Rugby · Touch Rugby](https://passport.world.rugby/laws-of-the-game/modified-forms-t1-xrugby-beach-touch-tag/touch-rugby/): referencia general de una modalidad adaptada; no define por sí sola el doble tap utilizado en esta clase.
-- [World Rugby · Fuera de juego en el juego general](https://passport.world.rugby/es/leyes-del-juego/leyes-por-numero/10-offside-y-onside-en-el-juego-general/): referencia para la posición en juego; los reinicios de doble tap se concretan como adaptación escolar.
-- [World Rugby · Avant o pase hacia delante](https://passport.world.rugby/fr/les-regles-du-jeu/regles-du-jeu-par-numero/11-en-avant-ou-passe-en-avant/): distinción de infracciones para el registro docente.
+- [World Rugby · Fuera de juego en el juego general](https://passport.world.rugby/laws-of-the-game/laws-by-number/10-offside-and-onside-in-open-play): referencia para la posición en juego; los reinicios de doble tap se concretan como adaptación escolar.
+- [World Rugby · Avant o pase hacia delante](https://passport.world.rugby/laws-of-the-game/laws-by-number/11-knock-forward-or-throw-forward/): distinción de infracciones para el registro docente.
 - [World Rugby · Juego abierto](https://www.world.rugby/the-game/beginners-guide/open-play): dirección del pase.
 
 El uso de doble tap, las progresiones por parejas y tríos y el objetivo de fijación en 2×2 responden a indicaciones del docente. La ejecución concreta del doble tap, su continuidad y la convención par/impar siguen siendo formulaciones provisionales. La distribución de sesiones, los juegos descritos y la observación son propuestas para este borrador. No se presenta como un reglamento oficial ni como una unidad curricular ya validada.

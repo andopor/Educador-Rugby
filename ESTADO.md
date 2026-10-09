@@ -74,3 +74,19 @@ Publicación externa confirmada: https://educador-rugby.vercel.app responde HTTP
 - Copia previa conservada en la rama respaldo/antes-reproduccion-pizarras-20261009.
 - Validación en navegador: movimiento real del balón y jugadores, pausa estable, reanudación, pasos, final de trenza, cruce antes del pase, apertura al impar hasta finalizar y ancho móvil de 390 px sin desbordamiento. Sin errores de consola durante las comprobaciones.
 - Son representaciones didácticas por fases, con recolocación entre pasos; no una simulación física continua ni una respuesta automática de los defensores.
+
+Actualización 0.6.0 publicada en https://educador-rugby.vercel.app. Archivos CSS, aplicación, diagramas y reproducción comprobados contra dist local. Reproducción y pausa de jugadores comprobadas también en la web pública. El despliegue automático tras actualizar GitHub queda confirmado por esta publicación.
+
+## Corrección reglamentaria y didáctica · 0.7.0
+
+- Revisadas las leyes 10 y 11 de World Rugby para posición en juego, repliegue y dirección del pase; doble tap y sus reinicios siguen identificados como adaptación escolar pendiente de concretar.
+- Recorridos, jugadores, posesión y tiempos explícitos en js/plays.js; eliminada la asignación de movimientos por proximidad a las flechas.
+- Pase hacia atrás, repliegue de quien queda adelantado y avance del nuevo portador. Los apoyos pueden avanzar mientras permanecen por detrás; no se enseña inmovilidad obligatoria. Las pausas de las animaciones son didácticas.
+- En parejas y trenzas, quien recibe avanza con balón hacia el centro. Posiciones y posesión enlazan entre fases sin recolocación instantánea.
+- Fijar al impar: A1 busca el centro y compromete a D2; A2 se abre, recibe y supera la altura de D2 por la banda con balón. Respuestas defensivas ilustrativas, no garantizadas.
+- Una pizarra 2×1 con elección entre fijar/pasar y aprovechar el espacio; eliminadas repeticiones dentro de las sesiones de 2×1 y trenzas.
+- Línea dinámica del portador/último pasador y aviso de repliegue sin equiparar automáticamente una posición adelantada a una sanción.
+- Ocho pruebas: contenido, CSV, defensores del 2×1, continuidad de posiciones/posesión, pases, posición y avance de apoyos (400 muestras por fase), búsqueda del centro, salida por banda y ausencia de duplicados.
+- Verificación local de navegador: cruce completo con pausa/reanudación, final de trenza, alternativas 2×1 (2/4 pasos), final de impar con A2 y balón más allá de D2, un balón por pizarra, consola sin errores y ancho de 390 px sin desbordamiento.
+- Copia anterior conservada en respaldo/antes-correccion-reglamento-20261009. RCP no se ha modificado.
+- Publicación 0.7.0 preparada; comprobar la URL tras actualizar GitHub.

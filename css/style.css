@@ -10,3 +10,5 @@
 
 /* Reproducción a petición: nunca comienza automáticamente. */
 .playback-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:14px}.playback-controls button,.playback-controls select,.playback-choice select{min-height:44px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:white;color:#28223a;font:inherit;font-size:.8rem}.playback-controls [data-play]{background:var(--primary);color:white;font-weight:750}.playback-controls label,.playback-choice{font-size:.8rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap}.playback-choice{margin-top:12px}.playback-status{font-size:.75rem;color:var(--muted);min-height:2.7em;margin:10px 0 0}.playback-controls button:focus-visible,.playback-controls select:focus-visible,.playback-choice select:focus-visible{outline:3px solid #951c80;outline-offset:3px}
+
+.run-route{fill:none;stroke:#951c80;stroke-width:3}.pass-route{fill:none;stroke:#3e526c;stroke-width:3;stroke-dasharray:7 6}.rule-status{font-size:.76rem;color:#294c43;padding:9px 12px;border-radius:9px;background:#e2f3e9;min-height:2.5em}.rule-status[data-retreat=true]{background:#fff0d7;color:#704418}

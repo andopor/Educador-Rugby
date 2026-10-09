@@ -22,7 +22,7 @@ test('las tareas tienen escenas válidas y el 2×1 mantiene un solo defensor',()
   assert.equal(frame.players.filter(p=>p.name.startsWith('A')).length,2);
  }
  assert.match(boards.par[1].caption,/A2 cruza por detrás/);
- assert.match(boards.impar[1].caption,/A2 se abre lateralmente/);
+ assert.match(boards.impar[1].caption,/A2 se abre.*banda/);
  const html=diagram('par','test-par')+diagram('impar','test-impar');
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
  assert.equal(new Set(ids).size,ids.length,'IDs de SVG deben ser únicos entre pizarras');
