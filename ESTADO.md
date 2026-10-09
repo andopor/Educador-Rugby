@@ -62,3 +62,15 @@ Actualización de acceso: instalada la conexión ChatGPT Codex Connector; escrit
 Comprobación tras habilitar GitHub: tres pruebas, sintaxis y compilación correctas. Vercel sigue rechazando el acceso al equipo con 403; requiere completar la publicación desde el panel autorizado del usuario o reparar esa conexión.
 
 Publicación GitHub completada: los 20 archivos del proyecto están en `andopor/Educador-Rugby`, rama `main`, commit inicial completo `fb50b3c`. Comparación con la copia local: contenido idéntico; únicamente difiere el modo ejecutable del SVG del logo, sin afectar a la web. El historial de trabajo local y el historial inicial de GitHub se conservan separados. Vercel continúa pendiente de acceso; no hay URL pública comprobada.
+
+Publicación externa confirmada: https://educador-rugby.vercel.app responde HTTP 200; página, estilos, scripts principales, contenido, pizarras, logo y balón coinciden byte a byte con la compilación local. Publicación completada por el usuario. Acceso interno al panel mediante conector sigue bloqueado (403), por lo que la configuración de despliegue automático no queda confirmada.
+
+## Pizarras animadas · 0.6.0
+
+- Reproducción a petición, pausa, reanudación, inicio y tres velocidades en Aprende y Practica.
+- Balón con transferencia al receptor y jugadores que siguen las trayectorias representadas. En par/impar, apoyo antes del pase.
+- Secuencias de cruce, trenza y fijación por fases; 2×1 mantiene sus alternativas separadas. En lectura libre de 2×2 se elige par o impar; en tríos se elige apoyo.
+- El circuito de evaluación conserva su esquema de organización estático. Solo una pizarra se reproduce a la vez; se detiene al cambiar de página o esconder la pestaña.
+- Copia previa conservada en la rama respaldo/antes-reproduccion-pizarras-20261009.
+- Validación en navegador: movimiento real del balón y jugadores, pausa estable, reanudación, pasos, final de trenza, cruce antes del pase, apertura al impar hasta finalizar y ancho móvil de 390 px sin desbordamiento. Sin errores de consola durante las comprobaciones.
+- Son representaciones didácticas por fases, con recolocación entre pasos; no una simulación física continua ni una respuesta automática de los defensores.

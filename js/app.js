@@ -1,11 +1,13 @@
 import { lessons, sessions, questions, criteria } from './content.js';
 import { escape as esc, csvCell } from './utils.js';
 import { diagram, updateDiagram } from './diagrams.js';
+import { togglePlayback, stopPlayback, stopAllPlayback, selectPhase } from './playback.js';
 const $ = id => document.getElementById(id);
 let lessonIndex = 0, questionIndex = 0, answers = [];
 const pages = [...document.querySelectorAll('.page')];
 function focusTitle(container) { const title = container.querySelector('h1,h2'); if(title){title.tabIndex=-1;title.focus({preventScroll:true});} }
 function route(focus = true) {
+  stopAllPlayback();
   const hash = location.hash.slice(1);
   if(hash==='main'){if(focus)$('main').focus();return;}
   const active = pages.find(page=>page.id===hash)||pages[0];
@@ -15,6 +17,7 @@ function route(focus = true) {
   if(focus){focusTitle(active);window.scrollTo({top:0,behavior:'instant'});}
 }
 function renderLesson(focus=false){
+  stopAllPlayback();
   $('lesson-nav').innerHTML=lessons.map((l,i)=>`<button class="lesson-tab" data-lesson="${i}" aria-pressed="${i===lessonIndex}"><b>0${i+1}</b><span>${esc(l.title)}<small>${esc(l.subtitle)}</small></span></button>`).join('');
   const l=lessons[lessonIndex];
   $('lesson-content').innerHTML=`<span class="eyebrow">LECCIÓN ${lessonIndex+1} DE ${lessons.length}</span><h2>${esc(l.title)}</h2><p class="lesson-lead">${esc(l.lead)}</p><ol class="lesson-steps">${l.steps.map(step=>`<li>${esc(step)}</li>`).join('')}</ol><p class="notice">${esc(l.note)}</p><div class="actions">${lessonIndex<lessons.length-1?'<button class="button primary" id="next-lesson">Siguiente lección →</button>':'<a class="button primary" href="#practica">Ahora, practica →</a>'}</div>`;
@@ -36,7 +39,7 @@ const lessonBoards = [
 ];
 function renderLessonBoard(){
  const config=lessonBoards[lessonIndex];
- $('lesson-board').innerHTML=`<div class="board-heading"><span class="eyebrow">PIZARRA · ${esc(lessons[lessonIndex].title)}</span><h2>${esc(config.title)}</h2><p>Recorre los pasos y sigue el balón y a cada jugador. Las flechas distinguen el recorrido del balón y el de los jugadores.</p></div><div class="board-grid">${config.keys.map((key,i)=>diagram(key,`lesson-${lessonIndex}-${key}-${i}`)).join('')}</div>`;
+ $('lesson-board').innerHTML=`<div class="board-heading"><span class="eyebrow">PIZARRA · ${esc(lessons[lessonIndex].title)}</span><h2>${esc(config.title)}</h2><p>Pulsa Reproducir para ver el balón y a los jugadores en movimiento. Puedes pausar, cambiar la velocidad o revisar cada paso.</p></div><div class="board-grid">${config.keys.map((key,i)=>diagram(key,`lesson-${lessonIndex}-${key}-${i}`)).join('')}</div>`;
 }
 $('sessions').innerHTML=sessions.map((s,i)=>`<details class="session" ${i===0?'open':''}><summary><span>0${i+1}</span>${esc(s.title)}</summary><div class="session-body"><p><strong>Objetivo:</strong> ${esc(s.goal)}</p><ul>${s.steps.map(step=>`<li>${esc(step)}</li>`).join('')}</ul><h3 class="session-diagrams-title">La práctica, de un vistazo.</h3><div class="practice-diagrams">${s.diagrams.map((key,j)=>diagram(key,`practice-${i}-${key}-${j}`,{compact:true})).join('')}</div><p class="notice"><strong>Ajuste:</strong> ${esc(s.adjust)}</p></div></details>`).join('');
 const lineLabels=['Línea 1 · 2×1','Línea 2 · 2×1','Línea final · 2×2'];
@@ -51,7 +54,9 @@ document.addEventListener('click',event=>{
  const button=event.target.closest('button');if(!button)return;
  if(button.dataset.lesson!==undefined){lessonIndex=Number(button.dataset.lesson);renderLesson(true);}
  if(button.id==='next-lesson'){lessonIndex++;renderLesson(true);}
- if(button.dataset.phaseTo!==undefined)updateDiagram(button.closest('[data-board]'),Number(button.dataset.phaseTo));
+ if(button.dataset.phaseTo!==undefined)selectPhase(button.closest('[data-board]'),Number(button.dataset.phaseTo));
+ if(button.hasAttribute('data-play')){const figure=button.closest('[data-board]');if(figure.dataset.board==='libre'&&!figure.dataset.variant){figure.dataset.variant='par';updateDiagram(figure,0);}togglePlayback(figure);}
+ if(button.hasAttribute('data-restart')){const figure=button.closest('[data-board]');stopPlayback(figure,true);figure.dataset.finished='false';}
  if(button.dataset.answer!==undefined&&answers.length===questionIndex){
   const selected=Number(button.dataset.answer),q=questions[questionIndex];answers.push(selected===q.answer);
   document.querySelectorAll('[data-answer]').forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===q.answer){b.classList.add('correct');b.textContent='Correcta: '+b.textContent;}else if(b===button){b.classList.add('incorrect');b.textContent='Tu respuesta: '+b.textContent;}});
@@ -67,5 +72,12 @@ document.addEventListener('click',event=>{
   fields.forEach(f=>f.value='');$('observation-status').textContent='Ficha vacía para una nueva observación.';fields[0].focus();
  }
  if(button.id==='print')window.print();
+});
+document.addEventListener('change',event=>{
+ if(event.target.matches('[data-variant],[data-pass-option]')){
+  const figure=event.target.closest('[data-board]');stopPlayback(figure);
+  if(event.target.matches('[data-variant]'))figure.dataset.variant=event.target.value;
+  updateDiagram(figure,0);figure.dataset.finished='false';
+ }
 });
 window.addEventListener('hashchange',()=>route());renderLesson();renderQuiz();route(false);

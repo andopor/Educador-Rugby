@@ -36,3 +36,7 @@ Esta versión es local. GitHub y Vercel no están conectados. Para alojarla como
 ## Alcance del borrador
 
 Confirmados: doble tap, parejas/cruces/trenzas, fijación par/impar y evaluación 2×1 + 2×1 + 2×2. Siguen provisionales: detalle del doble tap y reinicio, convención par/impar, distribución de sesiones, rotaciones y sistema de calificación. Las referencias deportivas figuran en la guía.
+
+## Web publicada
+
+[Educador Rugby](https://educador-rugby.vercel.app) · publicación y archivos principales comprobados el 9 de octubre de 2026.

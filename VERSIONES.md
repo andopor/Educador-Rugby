@@ -1,5 +1,11 @@
 # Versiones
 
+## 0.6.0 · 2026-10-09
+
+- Pizarras con reproducción del balón y los jugadores, pausa, reanudación, inicio y velocidad.
+- Fases conservadas y alternativas separadas en 2×1; elección de fijación y apoyo en los esquemas abiertos.
+- Verificación de animación y controles en navegador, con adaptación a móvil.
+
 ## Accesos de publicación · 2026-10-09
 
 - Repositorio creado por el usuario y remoto local conectado.
@@ -62,3 +68,9 @@
 - Publicados y verificados los 20 archivos del proyecto en main.
 - Tres pruebas, sintaxis y compilación correctas.
 - Vercel pendiente de completar desde una sesión autorizada.
+
+## Publicación Vercel confirmada · 2026-10-09
+
+- URL pública: https://educador-rugby.vercel.app.
+- Respuesta HTTP y archivos principales verificados contra la compilación local.
+- Configuración interna del panel y despliegue automático pendientes de inspección por acceso del conector.

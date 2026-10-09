@@ -6,7 +6,7 @@
 - Vercel: equipo existente `andopors-projects`, proyecto nuevo `educador-rugby`.
 - Rama de producción: `main`.
 
-Repositorio confirmado: https://github.com/andopor/Educador-Rugby. Versión completa publicada y comprobada en main mediante el conector. El remoto local `origin` apunta a ese repositorio. No existe aún una URL de producción verificada.
+Repositorio confirmado: https://github.com/andopor/Educador-Rugby. Versión completa publicada y comprobada en main mediante el conector. El remoto local `origin` apunta a ese repositorio. URL pública verificada: https://educador-rugby.vercel.app.
 
 ## Configuración preparada
 
@@ -32,3 +32,7 @@ Completar el acceso a GitHub en el navegador y disponer de una conexión de Verc
 ## Formulario Vercel
 
 Nombre válido: `educador-rugby` (minúsculas y guion, sin espacios). Raíz `./`, preset Other. No desplegar desde el repositorio vacío: primero subir los archivos.
+
+## Publicación confirmada · 2026-10-09
+
+El usuario ha completado la publicación desde Vercel. La URL pública responde HTTP 200. HTML, CSS, aplicación, contenido, pizarras y ambos SVG coinciden byte a byte con dist local. No se ha podido inspeccionar la configuración interna ni confirmar la conexión automática con GitHub porque el conector Vercel continúa devolviendo 403. No se ha repetido la prueba interactiva en producción; consta la revisión previa en navegador local.
