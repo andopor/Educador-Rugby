@@ -1,6 +1,6 @@
 # Educador Rugby · Aprende a jugar en equipo
 
-**Borrador 0.7 · 1.º ESO · 9 de octubre de 2026**
+**Borrador 0.8 · 1.º ESO · 9 de octubre de 2026**
 
 Propuesta de trabajo para revisar con el docente. Las seis sesiones, su duración y el material son hipótesis iniciales, no decisiones cerradas ni una programación curricular completa.
 
@@ -27,7 +27,7 @@ Estas son **adaptaciones para esta unidad**, no el reglamento completo de compet
 5. Si el balón cae o sale del campo, se para el juego y se reinicia con pase del otro equipo. El docente marca el punto y deja espacio suficiente para reiniciar.
 6. No se arrebata el balón de las manos ni se bloquea mediante contacto. Ante un choque o una caída, se detiene la actividad.
 
-**Posición en juego y pase:** estar por delante del compañero que lleva o jugó por última vez el balón es estar en posición de fuera de juego. No equivale automáticamente a sanción por el mero hecho de estar ahí: hay que distinguir posición e intervención. En estas progresiones, quien queda adelantado tras un pase hacia atrás se repliega y no vuelve a intervenir hasta recuperar una posición en juego. Los apoyos pueden avanzar mientras permanecen por detrás del portador; no se enseña que deban quedarse inmóviles siempre.
+**Posición en juego y pase:** estar por delante del compañero que lleva o jugó por última vez el balón es estar en posición de fuera de juego. No equivale automáticamente a sanción por el mero hecho de estar ahí: hay que distinguir posición e intervención. En parejas y trenzas, el pasador cruza por detrás para recuperar el apoyo. En los ejemplos de 2×1 y 2×2 con pase, el pasador espera quieto fuera de la trayectoria defensiva, sin intervenir ni obstaculizar, mientras el receptor avanza con balón y lo sobrepasa: así vuelve a estar en juego (ley 10.7a). No es una autorización general para permanecer adelantado interfiriendo en el juego. Los apoyos pueden avanzar mientras permanecen por detrás del portador; no se enseña que deban quedarse inmóviles siempre.
 
 Las animaciones separan pase, repliegue y avance para hacer visible el aprendizaje. Las pausas son una ayuda didáctica; no una obligación reglamentaria. En parejas y trenzas, quien recibe busca el centro con balón; en fijación al impar, A2 aprovecha la banda. Las respuestas defensivas de las pizarras son ejemplos guiados, no resultados garantizados.
 
@@ -87,7 +87,7 @@ Presentar las reglas poco a poco. La prioridad inicial es que todos comprendan l
 
 - Activación: recordar el 2×1 y el pase seguido de cruce por detrás.
 - Progresión 1 · Fijar al par: A1 busca con intención el centro entre los dos defensores y compromete a su par. A2 lee la situación y cruza por detrás de A1 para ofrecer apoyo. Coordinar el momento del pase.
-- Progresión 2 · Fijar al impar: A1 busca con intención el centro entre los dos defensores y compromete al impar. A2 lee la situación y se abre lateralmente, manteniendo profundidad para recibir; después avanza con balón por la banda para superar a D2. A1 se repliega por detrás antes de volver a apoyar. Ensayar primero con defensa guiada y sin buscar el contacto.
+- Progresión 2 · Fijar al impar: A1 busca con intención el centro entre los dos defensores y compromete al impar. A2 lee la situación y se abre lateralmente, manteniendo profundidad para recibir; después avanza con balón por la banda para superar a D2. A1 espera quieto sin intervenir ni obstaculizar mientras A2 progresa y lo sobrepasa. Ensayar primero con defensa guiada y sin buscar el contacto.
 - Progresión 3 · Elegir: defensa libre con doble tap. Los atacantes eligen trayectoria, apoyo y momento del pase según la respuesta de ambos defensores.
 - Aplicación: repetir desde ambos lados y rotar las cuatro posiciones.
 - Observar: identifica a quién intenta fijar, provoca una respuesta y coordina el pase con un apoyo útil.

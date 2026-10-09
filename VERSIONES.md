@@ -1,12 +1,19 @@
 # Versiones
 
+## 0.8.0 · 2026-10-09
+
+- Cruce por parejas de tres pasos, sin segunda repetición del gesto.
+- Pasador inmóvil tras el pase en 2×1 y 2×2 par/impar, sin fase extra de retroceso.
+- Avisos de espera sin intervención y puesta en juego al ser sobrepasado por el receptor.
+- Nueve pruebas y comprobación de las tres salidas en navegador correctas.
+
 ## 0.7.0 · 2026-10-09
 
 - Secuencias explícitas: pase, repliegue, avance y posesión continua.
 - Receptores buscan el centro en parejas y trenzas; A2 supera a D2 por la banda en fijación al impar.
 - Línea de posición y avisos de repliegue; alternativas del 2×1 separadas y pizarras duplicadas eliminadas.
 - Textos y guía revisados con las leyes 10 y 11 de World Rugby; adaptaciones escolares identificadas.
-- Ocho pruebas y revisión local en navegador/móvil correctas.
+- Ocho pruebas y revisión en navegador/móvil correctas. Publicación 0.7.0 y salida por banda comprobadas en la web pública.
 
 ## 0.6.0 · 2026-10-09
 

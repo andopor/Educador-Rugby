@@ -21,7 +21,7 @@ test('las jugadas enlazan posiciones y posesión sin saltos; todos los pases van
   }
  }
 });
-test('ningún apoyo avanza estando por delante del portador; quienes quedan adelantados se repliegan',()=>{
+test('los apoyos adelantados se repliegan o esperan sin avanzar según la tarea',()=>{
  for(const [key,frames] of Object.entries(boards))for(const [i,frame] of frames.entries()){
   if(frame.passTo)continue;
   let previous=sampleFrame(frame,0);
@@ -31,7 +31,7 @@ test('ningún apoyo avanza estando por delante del portador; quienes quedan adel
     const before=actor(previous,player.name);
     if(player.y<holder.y-.01){
      assert.ok(player.y>=before.y-1e-6,`${key}/${i}: ${player.name} avanza adelantado`);
-     assert.ok(player.y>before.y,`${key}/${i}: ${player.name} no se repliega`);
+     if(frame.waiting.includes(player.name)){assert.deepEqual(player,actor(sampleFrame(frame,0),player.name),`${key}/${i}: el pasador debe esperar quieto`);}else assert.ok(player.y>before.y,`${key}/${i}: ${player.name} no se repliega`);
     }
    }
    previous=state;
@@ -55,4 +55,26 @@ test('fijar al impar termina con A2 con balón superando a D2 por la banda',()=>
 });
 test('las sesiones no repiten pizarras idénticas dentro de la misma zona',()=>{
  for(const session of sessions)assert.equal(new Set(session.diagrams).size,session.diagrams.length,session.title);
+});
+
+test('en 2×1 y 2×2 el pasador espera quieto hasta ser sobrepasado; el cruce se muestra una sola vez',()=>{
+ assert.equal(boards.cruce.length,3);
+ assert.equal(boards.cruce.filter(f=>f.passTo).length,1);
+ const cross=boards.cruce[1];
+ const receiver=cross.players.find(p=>p.name===cross.ball);
+ // El recorrido debe pasar realmente al otro lado de A2, por detrás de su altura.
+ let passedBehind=false;
+ for(let i=0;i<=400;i++){
+  const p=actor(sampleFrame(cross,i/400),'A1');
+  if(Math.abs(p.x-receiver.x)<2&&p.y>receiver.y+23)passedBehind=true;
+ }
+ assert.ok(passedBehind,'El cruce debe pasar por detrás del receptor');
+ for(const key of ['dos-uno','par','impar']){
+  const frames=boards[key],last=frames.at(-1),start=sampleFrame(last,0),end=sampleFrame(last,1);
+  assert.deepEqual(last.waiting,['A1']);
+  assert.deepEqual(actor(start,'A1'),actor(end,'A1'),`${key}: el pasador retrocede o avanza`);
+  assert.ok(actor(start,'A1').y<actor(start,'A2').y);
+  assert.ok(actor(end,'A2').y<actor(end,'A1').y,`${key}: el receptor no lo sobrepasa`);
+  assert.ok(actor(end,'A2').y<actor(end,'D1').y);
+ }
 });

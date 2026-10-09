@@ -31,7 +31,7 @@ export const lessons = [
       "El apoyo mantiene anchura y se ofrece al lado o por detrás.",
       "Si el defensor cubre al apoyo, busca el espacio para avanzar.",
       "Si se compromete con el portador, busca el pase al compañero.",
-      "Tras pasar, repliega por detrás del nuevo portador antes de volver a apoyar."
+      "Tras pasar en este 2×1, espera quieto sin intervenir ni obstaculizar mientras el receptor progresa y te sobrepasa."
     ],
     "note": "Fijar es provocar una respuesta defensiva, sin buscar el choque."
   },
@@ -134,7 +134,7 @@ export const sessions = [
     "steps": [
       "Activación: recordar el 2×1 y el pase seguido de cruce por detrás.",
       "Progresión 1 · Fijar al par: A1 busca el centro entre los dos defensores y compromete a su par; A2 lee la situación y cruza por detrás para ofrecer apoyo.",
-      "Progresión 2 · Fijar al impar: A1 busca el centro entre los dos defensores y compromete al impar; A2 se abre manteniendo profundidad, recibe y avanza con balón por la banda para superar a D2. A1 se repliega antes de volver a apoyar.",
+      "Progresión 2 · Fijar al impar: A1 busca el centro entre los dos defensores y compromete al impar; A2 se abre manteniendo profundidad, recibe y avanza con balón por la banda para superar a D2. A1 espera quieto sin intervenir ni obstaculizar hasta que el receptor lo sobrepase.",
       "Progresión 3 · Elegir: defensa libre con doble tap. Los atacantes eligen trayectoria, apoyo y momento del pase según la respuesta de ambos defensores.",
       "Aplicación: repetir desde ambos lados y rotar las cuatro posiciones.",
       "Observar: identifica a quién intenta fijar, provoca una respuesta y coordina el pase con un apoyo útil.",

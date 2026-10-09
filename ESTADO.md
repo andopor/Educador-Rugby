@@ -89,4 +89,14 @@ Actualización 0.6.0 publicada en https://educador-rugby.vercel.app. Archivos CS
 - Ocho pruebas: contenido, CSV, defensores del 2×1, continuidad de posiciones/posesión, pases, posición y avance de apoyos (400 muestras por fase), búsqueda del centro, salida por banda y ausencia de duplicados.
 - Verificación local de navegador: cruce completo con pausa/reanudación, final de trenza, alternativas 2×1 (2/4 pasos), final de impar con A2 y balón más allá de D2, un balón por pizarra, consola sin errores y ancho de 390 px sin desbordamiento.
 - Copia anterior conservada en respaldo/antes-correccion-reglamento-20261009. RCP no se ha modificado.
-- Publicación 0.7.0 preparada; comprobar la URL tras actualizar GitHub.
+- Publicación 0.7.0 confirmada en https://educador-rugby.vercel.app: archivos de jugadas, reproducción, presentación, contenido, aplicación, estilos y guía coinciden con dist local. Final de fijación al impar reproducido en navegador público con A2 en (360,55), D2 en (245,120) y balón junto a A2.
+
+## Simplificación confirmada por el docente · 0.8.0
+
+- Cruce por parejas reducido a un gesto completo de tres pasos: pase, cruce real por detrás y avance del receptor al centro. Eliminados los antiguos pasos 4–6.
+- En 2×1 con pase y 2×2 par/impar, eliminado el retroceso posterior al pase. A1 permanece quieto, sin intervenir ni obstaculizar, mientras A2 progresa con balón y lo sobrepasa (puesta en juego por compañero, ley 10.7a).
+- Conservados el cruce de A2 antes de recibir en fijación al par y su apertura y salida por banda en fijación al impar.
+- Aviso específico de espera durante la posición adelantada y confirmación de puesta en juego cuando el portador sobrepasa al pasador. La espera no se presenta como autorización para interferir ni como norma general de todas las tareas.
+- Textos, guía y pruebas ajustados a esta decisión docente. Copia anterior: respaldo/antes-simplificar-jugadas-20261009.
+- Nueve pruebas, sintaxis y compilación correctas. Navegador: cruce con tres pasos; A1 inmóvil durante y al final de las salidas de 2×1, par e impar; aviso de espera seguido de puesta en juego. Consola sin errores.
+- Publicación de la versión 0.8.0 preparada; verificar la URL tras actualizar GitHub.

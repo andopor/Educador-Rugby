@@ -36,3 +36,7 @@ Nombre válido: `educador-rugby` (minúsculas y guion, sin espacios). Raíz `./`
 ## Publicación confirmada · 2026-10-09
 
 El usuario ha completado la publicación desde Vercel. La URL pública responde HTTP 200. HTML, CSS, aplicación, contenido, pizarras y ambos SVG coinciden byte a byte con dist local. No se ha podido inspeccionar la configuración interna ni confirmar la conexión automática con GitHub porque el conector Vercel continúa devolviendo 403. No se ha repetido la prueba interactiva en producción; consta la revisión previa en navegador local.
+
+## Revisión 0.7.0 publicada
+
+Corrección de apoyos, repliegues, búsqueda del centro, salida por banda y duplicados publicada automáticamente desde GitHub. Archivos principales y guía comparados con dist local; final de fijación al impar verificado en navegador público. El acceso interno del conector Vercel sigue pendiente, pero no impide este flujo de publicación.

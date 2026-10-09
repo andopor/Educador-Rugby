@@ -29,7 +29,11 @@ export function paintFrame(figure,progress){
  figure.querySelector('[data-position-line]')?.setAttribute('d',`M25 ${holder.y}H395`);
  const ahead=state.players.filter(p=>p.name.startsWith('A')&&p.name!==holder.name&&p.y<holder.y-0.01);
  const status=figure.querySelector('[data-rule-status]');
- if(status){status.textContent=ahead.length?`${ahead.map(p=>p.name).join(' y ')}: replegarse por detrás antes de intervenir.`:'Apoyos por detrás del portador.';status.dataset.retreat=String(ahead.length>0);}
+ if(status){
+  const waiting=ahead.filter(p=>frame.waiting.includes(p.name)),retreating=ahead.filter(p=>!frame.waiting.includes(p.name));
+  status.textContent=ahead.length?[waiting.length?`${waiting.map(p=>p.name).join(' y ')}: espera sin intervenir ni obstaculizar.`:'',retreating.length?`${retreating.map(p=>p.name).join(' y ')}: replegarse por detrás antes de intervenir.`:''].filter(Boolean).join(' '):(frame.waiting.length?'El portador ha sobrepasado al pasador: vuelve a estar en juego.':'Apoyos por detrás del portador.');
+  status.dataset.retreat=String(ahead.length>0);
+ }
 }
 export function updateDiagram(figure,phase){
  const frames=framesFor(figure),frame=frames[phase];if(!frame)return;

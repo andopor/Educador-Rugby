@@ -16,12 +16,12 @@ export function sampleFrame(frame,progress){
   ball:from?mix(from,to,t):null};
 }
 function sequence(players,ball,steps){
- return steps.map(([title,caption,moves={},passTo=null])=>{
+ return steps.map(([title,caption,moves={},passTo=null,waiting=[]])=>{
   const routes=Object.fromEntries(Object.entries(moves).map(([name,coords])=>{
    const actor=players.find(v=>v.name===name);
    return [name,[{x:actor.x,y:actor.y},...coords.map(point)]];
   }));
-  const frame={title,caption,players:players.map(v=>({...v})),ball,moves:routes,passTo,duration:passTo?1400:2400};
+  const frame={title,caption,players:players.map(v=>({...v})),ball,moves:routes,passTo,waiting,duration:passTo?1400:2400};
   const end=sampleFrame(frame,1);players=end.players;ball=end.holder;
   return frame;
  });
@@ -45,10 +45,7 @@ export const boards={
  cruce:sequence(pair,'A1',[
   ['1 · Pasar','A1 pasa hacia atrás a A2, que espera para recibir.',{},'A2'],
   ['2 · Cruzar por detrás','A1 primero retrocede y cruza por detrás de A2. A2 conserva el balón mientras se recupera el apoyo.',{A1:[[110,300],[355,310],[355,275]]}],
-  ['3 · Buscar el centro con balón','A2, que recibió, avanza hacia el centro. A1 acompaña sin adelantar al portador.',{A2:[[210,145]],A1:[[335,250]]}],
-  ['4 · Enlazar otro pase','A2 pasa hacia atrás a A1, ya disponible como apoyo.',{},'A1'],
-  ['5 · Volver a cruzar por detrás','A2 retrocede y cruza por detrás del nuevo portador A1.',{A2:[[210,310],[90,310],[90,290]]}],
-  ['6 · Continuar por el centro','A1 avanza con balón hacia el centro. A2 mantiene profundidad para el siguiente pase.',{A1:[[210,180]],A2:[[90,270]]}]
+  ['3 · Buscar el centro con balón','A2, que recibió, avanza hacia el centro. A1 acompaña sin adelantar al portador.',{A2:[[210,145]],A1:[[335,250]]}]
  ]),
  trenza:sequence(trio,'A1',[
   ['1 · A1 pasa a A2','A2 recibe el pase hacia atrás; A3 espera como siguiente apoyo.',{},'A2'],
@@ -74,8 +71,7 @@ export const boards={
  'dos-uno':sequence(one,'A1',[
   ['1 · Leer y fijar','A1 avanza con balón. D1 se compromete con A1 y A2 acompaña por detrás. Respuesta defensiva ilustrativa.',{A1:[[185,160]],A2:[[300,245]],D1:[[185,105]]}],
   ['2 · Fijar y pasar','A1 libera a A2 con un pase hacia atrás antes del contacto.',{},'A2'],
-  ['3 · Replegarse para apoyar','A1 retrocede por detrás de A2 antes de volver a participar.',{A1:[[145,285]]}],
-  ['4 · Avanzar con balón','A2 avanza por el espacio libre. A1 acompaña por detrás.',{A2:[[300,65]],A1:[[180,230]]}]
+  ['3 · Avanzar con balón','A2 avanza con balón y supera al defensor. A1 espera quieto, sin intervenir ni obstaculizar; vuelve a estar en juego cuando A2 lo sobrepasa.',{A2:[[300,65]]},null,['A1']]
  ]),
  'dos-uno-espacio':sequence(one,'A1',[
   ['1 · Leer al defensor','D1 protege a A2. A1 conserva el balón y observa el espacio libre. Respuesta defensiva ilustrativa.',{A1:[[185,160]],A2:[[300,245]],D1:[[280,110]]}],
@@ -85,15 +81,13 @@ export const boards={
   seek,
   ['2 · Fijar al par y cruzar','A1 compromete a D1, su par inicial. A2 cruza por detrás de A1 para ofrecer apoyo. Respuesta defensiva ilustrativa.',{A1:[[190,175]],D1:[[170,120]],A2:[[250,310],[90,290],[90,225]]}],
   ['3 · Pasar al cruce','A2 recibe por detrás de A1. El pase no se dirige hacia delante.',{},'A2'],
-  ['4 · Recuperar el apoyo','A1 retrocede por detrás de A2 antes de volver a intervenir.',{A1:[[240,275]]}],
-  ['5 · Avanzar con balón','A2 aprovecha el espacio exterior tras el cruce. A1 acompaña por detrás.',{A2:[[90,55]],A1:[[230,235]]}]
+  ['4 · Avanzar con balón','A2 avanza con balón por el espacio exterior tras el cruce. A1 espera quieto, sin intervenir ni obstaculizar; vuelve a estar en juego cuando A2 lo sobrepasa.',{A2:[[90,55]]},null,['A1']]
  ]),
  impar:sequence(two,'A1',[
   seek,
   ['2 · Fijar al impar','A1 compromete a D2, el impar. A2 se abre hacia la banda manteniendo profundidad. Respuesta defensiva ilustrativa.',{A1:[[235,175]],D2:[[245,120]],A2:[[360,235]]}],
   ['3 · Pasar al apoyo exterior','A2 recibe por detrás del portador, abierto hacia la banda.',{},'A2'],
-  ['4 · Recuperar el apoyo','A1 retrocede por detrás del nuevo portador A2.',{A1:[[230,280]]}],
-  ['5 · Fijar al impar: superar por la banda','A2 avanza con balón por la banda y supera la altura de D2. A1 acompaña por detrás.',{A2:[[360,55]],A1:[[250,230]]}]
+  ['4 · Fijar al impar: superar por la banda','A2 avanza con balón por la banda y supera a D2. A1 espera quieto, sin intervenir ni obstaculizar; vuelve a estar en juego cuando A2 lo sobrepasa.',{A2:[[360,55]]},null,['A1']]
  ]),
  tap:sequence([p('D1',150,100),p('A1',150,180),p('A2',305,245)],'A1',[
   ['1 · Doble tap · Control y espacio','Aproximación controlada al portador, sin empujar ni agarrar. Adaptación escolar: el docente concreta el toque y el reinicio.',{D1:[[150,130]]}],
