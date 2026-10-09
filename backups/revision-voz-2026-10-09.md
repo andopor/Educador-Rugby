@@ -1,0 +1,8 @@
+
+
+- Incorporar en la web el logo del IES María Soliño, disponible en los recursos de Educador RCP, manteniendo el balón de rugby. Ubicación pendiente de decidir. Anotado; todavía no aplicado a la web.
+- En Aprende, incorporar una pizarra específica de pasar y cruzar por parejas: ambos avanzan, uno pasa, quien recibe continúa avanzando y quien pasó cruza por detrás para volver a apoyar. Mostrar claramente el recorrido del balón y el de cada jugador. Pendiente de implementar.
+- Incorporar también una pizarra de trenzas por tríos, mostrando la secuencia de pases y cruces por detrás. Presentar la pizarra adecuada al contenido, en el espacio donde ahora aparece siempre el 2×2. Pendiente de implementar.
+- Corrección docente para la pizarra de fijación: A1 busca con intención el centro entre los dos defensores. A2 lee la situación: si A1 fija al impar, A2 se abre lateralmente; si fija al par, A2 cruza por detrás. Ajustar trayectorias, explicación y apoyo representado. Confirmado después por el docente: esta corrección corresponde a la lección 04, fijar al par o al impar (2×2). No trasladarla al 2×1. Anotado, pendiente de aplicar.
+- Cada contexto de Aprende debe tener su pizarra correspondiente: en la lección 03, Resolver un 2×1, representar dos atacantes y un solo defensor; en la 04, el 2×2 con las trayectorias corregidas. Evitar mostrar siempre la misma pizarra de 2×2. Pendiente de implementar.
+- En Practica, añadir un esquema gráfico propio para cada actividad o progresión, dentro de su sesión: posiciones de jugadores, recorrido del balón y desplazamientos. Mantener el estilo visual de las pizarras y su correspondencia con la tarea. Pendiente de implementar.
