@@ -56,3 +56,9 @@
 
 - Instalación del conector realizada por el usuario; escritura verificada.
 - Preparación de la subida completa, conservando el historial local.
+
+## Web subida a GitHub · 2026-10-09
+
+- Publicados y verificados los 20 archivos del proyecto en main.
+- Tres pruebas, sintaxis y compilación correctas.
+- Vercel pendiente de completar desde una sesión autorizada.

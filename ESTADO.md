@@ -60,3 +60,5 @@ Actualización: el usuario ha creado `andopor/Educador-Rugby` (público). Reposi
 Actualización de acceso: instalada la conexión ChatGPT Codex Connector; escritura GitHub verificada. Subida completa en curso; publicación Vercel todavía pendiente de comprobar. Historial previo conservado localmente.
 
 Comprobación tras habilitar GitHub: tres pruebas, sintaxis y compilación correctas. Vercel sigue rechazando el acceso al equipo con 403; requiere completar la publicación desde el panel autorizado del usuario o reparar esa conexión.
+
+Publicación GitHub completada: los 20 archivos del proyecto están en `andopor/Educador-Rugby`, rama `main`, commit inicial completo `fb50b3c`. Comparación con la copia local: contenido idéntico; únicamente difiere el modo ejecutable del SVG del logo, sin afectar a la web. El historial de trabajo local y el historial inicial de GitHub se conservan separados. Vercel continúa pendiente de acceso; no hay URL pública comprobada.

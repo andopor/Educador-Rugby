@@ -6,7 +6,7 @@
 - Vercel: equipo existente `andopors-projects`, proyecto nuevo `educador-rugby`.
 - Rama de producción: `main`.
 
-Repositorio confirmado: https://github.com/andopor/Educador-Rugby. Conexión de escritura habilitada; versión completa preparada para su publicación en main. El remoto local `origin` apunta a ese repositorio. No existe aún una URL de producción verificada.
+Repositorio confirmado: https://github.com/andopor/Educador-Rugby. Versión completa publicada y comprobada en main mediante el conector. El remoto local `origin` apunta a ese repositorio. No existe aún una URL de producción verificada.
 
 ## Configuración preparada
 
@@ -24,7 +24,7 @@ Completar el acceso a GitHub en el navegador y disponer de una conexión de Verc
 ## Secuencia al disponer de acceso
 
 1. Repositorio creado por el usuario; historial previo preservado localmente.
-2. Remoto propio añadido; subir la versión completa a `main` mediante el conector.
+2. Remoto propio añadido; versión completa subida a `main` mediante el conector.
 3. Importar ese repositorio en Vercel, en el equipo indicado, sin modificar otros proyectos.
 4. Publicar producción y comprobar el estado del despliegue, la URL y los recursos gráficos.
 5. Guardar aquí y en README los enlaces reales y el estado de la conexión automática con GitHub.
